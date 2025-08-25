@@ -1,5 +1,5 @@
 {% set name = "nomad-camels-driver-thorlabs-MFF" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_camels_driver_thorlabs_MFF-{{ version }}.tar.gz
-  sha256: 92e3a41611ac94fc0d48663e931185765933464dee81ec14bb5f5475b0e882f5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: 0a6c30a5e2610bd73a5251da2bec12403db1a58afd18da4b8cdbd5f02b808b36
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
