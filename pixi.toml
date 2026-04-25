@@ -5,7 +5,7 @@
 
 [workspace]
 name = "nomad-camels-driver-thorlabs-mff-feedstock"
-version = "3.54.1"  # conda-smithy version used to generate this file
+version = "3.61.2"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/nomad-camels-driver-thorlabs-mff-feedstock"
 authors = ["@conda-forge/nomad-camels-driver-thorlabs-mff"]
 channels = ["conda-forge"]
